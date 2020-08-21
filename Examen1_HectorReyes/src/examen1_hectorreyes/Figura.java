@@ -5,6 +5,8 @@
  */
 package examen1_hectorreyes;
 
+import java.awt.Color;
+
 /**
  *
  * @author Onasis Reyes
@@ -12,6 +14,17 @@ package examen1_hectorreyes;
 public class Figura extends Articulo {
 
     private String descripcionFigura, instruccionesArmado, tGarantia;
+
+    public Figura() {
+        super();
+    }
+
+    public Figura(String descripcionFigura, String instruccionesArmado, String tGarantia, String titulo, Color color, String descripcion, String editorial, double tamaño, double puntuacion, Persona persona) {
+        super(titulo, color, descripcion, editorial, tamaño, puntuacion, persona);
+        this.descripcionFigura = descripcionFigura;
+        this.instruccionesArmado = instruccionesArmado;
+        this.tGarantia = tGarantia;
+    }
 
     public String getDescripcionFigura() {
         return descripcionFigura;
